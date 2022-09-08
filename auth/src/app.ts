@@ -3,8 +3,7 @@ import "express-async-errors";
 import cookieSession from "cookie-session";
 
 import { currentUserRouter } from "./routes/current-user";
-import { errorHandler } from "./middlewares/error-handler";
-import { NotFoundError } from "./errors/not-found-error";
+import { errorHandler, NotFoundError } from "@italo-tickets/common";
 import { signinRouter } from "./routes/signin";
 import { signoutRouter } from "./routes/signout";
 import { signupRouter } from "./routes/signup";
